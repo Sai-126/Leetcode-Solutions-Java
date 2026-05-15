@@ -5,11 +5,11 @@ class Solution {
         while (low < high) {
             int mid = low + (high - low) / 2;
 
-            // If mid is greater than high, min is in right half
+            // Minimum is in the right half
             if (nums[mid] > nums[high]) {
                 low = mid + 1;
             } 
-            // else min is in left half including mid
+            // Minimum is at mid or in the left half
             else {
                 high = mid;
             }
